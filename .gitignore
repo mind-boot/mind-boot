@@ -1,0 +1,16 @@
+# eclipse project files
+.settings
+.project
+.classpath
+target
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+nuget/content/
+nuget/bootstrap-fileinput.*.nupkg
+.DS_Store
+logs
+*.sh
+log
