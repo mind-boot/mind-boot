@@ -1,6 +1,6 @@
-package com.mind.common.base;
+package io.github.mind.boot.common.base;
 
-import com.mind.common.enums.MindBootEnum;
+import io.github.mind.boot.common.enums.MindBootEnum;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

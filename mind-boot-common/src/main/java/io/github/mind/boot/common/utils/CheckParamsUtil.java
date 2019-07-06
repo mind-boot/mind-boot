@@ -1,7 +1,7 @@
-package com.mind.common.utils;
+package io.github.mind.boot.common.utils;
 
-import com.mind.common.enums.MindBootEnum;
-import com.mind.common.exception.BaseBizException;
+import io.github.mind.boot.common.enums.MindBootEnum;
+import io.github.mind.boot.common.exception.BaseBizException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 

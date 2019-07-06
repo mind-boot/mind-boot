@@ -3,4 +3,4 @@ ___   |/  /___(_)_______ ______  /
 __  /|_/ / __  / __  __ \_  __  /
 _  /  / /  _  /  _  / / // /_/ /
 /_/  /_/   /_/   /_/ /_/ \__,_/
-${Ansi.GREEN}:: Mind Boot :: ${Ansi.DEFAULT}(v1.0.0.SNAPSHOT)
+${Ansi.GREEN}:: Mind Boot :: ${Ansi.DEFAULT}(v1.0.0.RELEASE)

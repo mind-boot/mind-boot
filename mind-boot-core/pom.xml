@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.mind.boot</groupId>
+    <groupId>io.github.mind-boot</groupId>
     <artifactId>mind-boot</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-RELEASE</version>
   </parent>
   <artifactId>mind-boot-core</artifactId>
   <packaging>jar</packaging>
@@ -28,9 +28,9 @@
     </dependency>
 
     <dependency>
-        <groupId>com.mind.boot</groupId>
+        <groupId>io.github.mind-boot</groupId>
         <artifactId>mind-boot-common</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0-RELEASE</version>
         <scope>compile</scope>
     </dependency>
   </dependencies>

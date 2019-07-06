@@ -1,6 +1,6 @@
-package com.mind.core.boot;
+package io.github.mind.boot.core.boot;
 
-import com.mind.core.MindBootApplication;
+import io.github.mind.boot.core.MindBootApplication;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.JavaVersion;
 import org.apache.commons.lang3.SystemUtils;

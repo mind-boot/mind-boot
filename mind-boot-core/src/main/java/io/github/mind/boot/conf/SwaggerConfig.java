@@ -1,4 +1,4 @@
-package com.mind.conf;
+package io.github.mind.boot.conf;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

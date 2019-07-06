@@ -1,8 +1,8 @@
-package com.mind.common.utils;
+package io.github.mind.boot.common.utils;
 
-import com.mind.common.base.ResultBase;
-import com.mind.common.enums.MindBootEnum;
-import com.mind.common.exception.BaseBizException;
+import io.github.mind.boot.common.base.ResultBase;
+import io.github.mind.boot.common.enums.MindBootEnum;
+import io.github.mind.boot.common.exception.BaseBizException;
 
 /**
  * @author caoyong

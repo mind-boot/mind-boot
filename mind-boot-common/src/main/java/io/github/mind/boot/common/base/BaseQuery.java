@@ -1,4 +1,4 @@
-package com.mind.common.base;
+package io.github.mind.boot.common.base;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

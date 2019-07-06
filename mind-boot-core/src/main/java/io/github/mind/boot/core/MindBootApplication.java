@@ -1,4 +1,4 @@
-package com.mind.core;
+package io.github.mind.boot.core;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

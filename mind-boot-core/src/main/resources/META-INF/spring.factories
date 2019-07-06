@@ -1,7 +1,7 @@
 org.springframework.boot.SpringApplicationRunListener=\
-  com.mind.core.boot.MindApplicationRunListener
+  io.github.mind.boot.core.boot.MindApplicationRunListener
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.mind.conf.SwaggerConfig,\
-  com.mind.aop.LogAspect,\
-  com.mind.aop.GlobalExceptionHandler,\
-  com.mind.aop.ControllerBaseResponse
+  io.github.mind.boot.conf.SwaggerConfig,\
+  io.github.mind.boot.aop.LogAspect,\
+  io.github.mind.boot.aop.GlobalExceptionHandler,\
+  io.github.mind.boot.aop.ControllerBaseResponse

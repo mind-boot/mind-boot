@@ -1,7 +1,7 @@
-package com.mind.aop;
+package io.github.mind.boot.aop;
 
-import com.mind.common.base.BaseResponse;
-import com.mind.common.exception.BaseBizException;
+import io.github.mind.boot.common.base.BaseResponse;
+import io.github.mind.boot.common.exception.BaseBizException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;

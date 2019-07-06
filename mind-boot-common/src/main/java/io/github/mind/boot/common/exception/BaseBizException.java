@@ -1,4 +1,4 @@
-package com.mind.common.exception;
+package io.github.mind.boot.common.exception;
 
 /**
  * service业务处理异常

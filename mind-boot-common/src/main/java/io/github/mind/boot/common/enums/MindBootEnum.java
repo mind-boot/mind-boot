@@ -1,4 +1,4 @@
-package com.mind.common.enums;
+package io.github.mind.boot.common.enums;
 
 /**
  * 错误枚举

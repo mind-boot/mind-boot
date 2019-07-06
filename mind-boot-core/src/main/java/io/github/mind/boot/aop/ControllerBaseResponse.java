@@ -1,7 +1,7 @@
-package com.mind.aop;
+package io.github.mind.boot.aop;
 
-import com.mind.common.base.BaseResponse;
-import com.mind.common.base.ResultBase;
+import io.github.mind.boot.common.base.BaseResponse;
+import io.github.mind.boot.common.base.ResultBase;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
