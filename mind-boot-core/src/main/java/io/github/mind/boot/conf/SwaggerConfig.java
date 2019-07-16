@@ -30,7 +30,7 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Comment Doc").description("评论系统 Api文档")
+        return new ApiInfoBuilder().title("Doc").description("Api文档")
                 .termsOfServiceUrl("http://localhost/web/").contact(new Contact("yong.cao", "", "")).version("1.0")
                 .build();
     }
