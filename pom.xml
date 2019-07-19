@@ -66,69 +66,89 @@
                   <encoding>UTF-8</encoding>
               </configuration>
           </plugin>
-          <!-- gpg plugin 签名认证 -->
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-gpg-plugin</artifactId>
-              <version>1.6</version>
-              <executions>
-                  <execution>
-                      <id>sign-artifacts</id>
-                      <phase>verify</phase>
-                      <goals>
-                          <goal>sign</goal>
-                      </goals>
-                  </execution>
-              </executions>
-          </plugin>
-          <!--staging puglin 自动执行发布阶段-->
-          <plugin>
-              <groupId>org.sonatype.plugins</groupId>
-              <artifactId>nexus-staging-maven-plugin</artifactId>
-              <version>1.6.7</version>
-              <extensions>true</extensions>
-              <configuration>
-                  <serverId>ossrh</serverId>
-                  <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                  <autoReleaseAfterClose>true</autoReleaseAfterClose>
-              </configuration>
-          </plugin>
-          <!-- release plugin release仓库部署插件 -->
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-release-plugin</artifactId>
-              <version>2.4.2</version>
-          </plugin>
-          <!-- doc plugin Maven API文档生成插件 -->
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-javadoc-plugin</artifactId>
-              <version>3.1.0</version>
-              <executions>
-                  <execution>
-                      <id>attach-javadocs</id>
-                      <goals>
-                          <goal>jar</goal>
-                      </goals>
-                  </execution>
-              </executions>
-          </plugin>
-          <!-- sources plugin Maven源码插件 -->
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-source-plugin</artifactId>
-              <version>3.1.0</version>
-              <executions>
-                  <execution>
-                      <id>attach-sources</id>
-                      <goals>
-                          <goal>jar-no-fork</goal>
-                      </goals>
-                  </execution>
-              </executions>
-          </plugin>
       </plugins>
   </build>
+
+  <profiles>
+      <profile>
+          <id>sonatype-oss-release</id>
+          <build>
+              <plugins>
+                  <!-- sources plugin Maven源码插件 -->
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-source-plugin</artifactId>
+                      <version>3.1.0</version>
+                      <executions>
+                          <execution>
+                              <id>attach-sources</id>
+                              <goals>
+                                  <goal>jar-no-fork</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+                  <!-- doc plugin Maven API文档生成插件 -->
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-javadoc-plugin</artifactId>
+                      <version>3.1.0</version>
+                      <executions>
+                          <execution>
+                              <id>attach-javadocs</id>
+                              <goals>
+                                  <goal>jar</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+                  <!-- gpg plugin 签名认证 -->
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-gpg-plugin</artifactId>
+                      <version>1.6</version>
+                      <executions>
+                          <execution>
+                              <id>sign-artifacts</id>
+                              <phase>verify</phase>
+                              <goals>
+                                  <goal>sign</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+                  <!--staging puglin 自动执行发布阶段-->
+                  <plugin>
+                      <groupId>org.sonatype.plugins</groupId>
+                      <artifactId>nexus-staging-maven-plugin</artifactId>
+                      <version>1.6.7</version>
+                      <extensions>true</extensions>
+                      <configuration>
+                          <serverId>ossrh</serverId>
+                          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                      </configuration>
+                  </plugin>
+                  <!-- release plugin release仓库部署插件 -->
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-release-plugin</artifactId>
+                      <version>2.4.2</version>
+                  </plugin>
+              </plugins>
+          </build>
+          <distributionManagement>
+              <snapshotRepository>
+                  <id>oss</id><!-- settings.xml中server节点的id-->
+                  <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+              </snapshotRepository>
+              <repository>
+                  <id>oss</id>
+                  <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+              </repository>
+          </distributionManagement>
+      </profile>
+  </profiles>
 
   <properties>
       <mysql-connector-java-version>5.1.46</mysql-connector-java-version>
