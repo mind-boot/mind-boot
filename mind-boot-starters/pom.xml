@@ -3,11 +3,11 @@
   <parent>
       <groupId>io.github.mind-boot</groupId>
       <artifactId>mind-boot</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
   </parent>
 
   <artifactId>mind-boot-starters</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>pom</packaging>
   <modules>
       <module>mind-boot-starter-web</module>
@@ -18,7 +18,7 @@
       <dependency>
           <groupId>io.github.mind-boot</groupId>
           <artifactId>mind-boot-common</artifactId>
-          <version>1.0.0</version>
+          <version>1.0.1</version>
       </dependency>
   </dependencies>
 
