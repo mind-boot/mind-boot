@@ -151,7 +151,7 @@
   </profiles>
 
   <properties>
-      <mysql-connector-java-version>5.1.46</mysql-connector-java-version>
+      <mysql-connector-java-version>8.0.16</mysql-connector-java-version>
       <druid-version>1.0.9</druid-version>
       <pagehelper-spring-boot-starter>1.2.10</pagehelper-spring-boot-starter>
       <mybatis-spring-boot.version>1.3.2</mybatis-spring-boot.version>
